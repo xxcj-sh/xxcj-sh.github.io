@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/logo/favicon-16x16.png">
+    <link rel="manifest" href="/assets/image/logo/site.webmanifest">
+
+    <!-- 下面两行用于生成主页标签页以及子网页标签页上面的小图标 -->
+    <link rel="shortcut icon" href="/assets/image/logo/favicon.ico" type="image/x-icon"/>
+    <link rel="bookmark" href="/assets/image/logo/favicon.ico"/>
+    <title>{{ site.title }}</title>
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+</head>
